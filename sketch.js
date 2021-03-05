@@ -18,8 +18,8 @@ var prevTouched = touched;
 function preload() {
   pipeBodySprite = loadImage('graphics/pipe_marshmallow_fix.png');
   pipePeakSprite = loadImage('graphics/pipe_marshmallow_fix.png');
-  birdSprite = loadImage('graphics/train.png');
-  bgImg = loadImage('graphics/background.png');
+  birdSprite = loadImage('graphics/final ball.png');
+  bgImg = loadImage('graphics/Back.png');
 }
 
 function setup() {
@@ -65,9 +65,9 @@ function draw() {
   bird.update();
   bird.show();
 
-  if ((frameCount - gameoverFrame) % 150 == 0) {
-    pipes.push(new Pipe());
-  }
+//  if ((frameCount - gameoverFrame) % 150 == 0) {
+//    pipes.push(new Pipe());
+//  }
 
   showScores();
 
